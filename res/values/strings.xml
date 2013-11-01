@@ -2,4 +2,7 @@
 <resources>
     <string name="identities_header_text">Trigonometric Identities</string>
     <string name="app_name">Trigonometric</string>
+    <string name="identities_description_text">
+        Hey, this application displays some of your favourite trigonometric identities!
+	</string>
 </resources>

@@ -3,4 +3,9 @@
     <color name="header_color">#777777</color>
     <color name="black_overlay">#000</color>
 	<color name="shadow_color">#80000000</color>
+	<color name="white_box_color">#FFF</color>
+	<color name="on_white_box_font_color">#325d72</color>
+	
+	<color name="dark_on_background_bg">#454545</color>
+	<color name="dark_on_background_font_color">#9dd18f</color>
 </resources>

@@ -1,0 +1,62 @@
+{
+	"testString": "Lorem Ipsum Dolor",
+    "meta": {
+        "version": "0.0.1",
+        "last updated": "01.11.2013",
+        "author": "Khrall"
+    },
+    "identities": [
+        {
+            "name": "Pythagorean Identity",
+            "equations": [
+            	"Cos^2 x + Sin^2 x = 1"
+            ]
+        },
+        {
+            "name": "Power Reductive Identities",
+            "equations": [
+                "Sin^2 x = (1 - Cos2x)/2",
+                "Cos^2 x = (1 + Cos2x)/2"
+            ]
+        },
+        {
+            "name": "Double-Angles",
+            "equations": [
+                "Sin 2x = 2 Sin x Cos x",
+                "Cos 2x = Cos^2 x - Sin^2 x"
+            ]
+        },
+        {
+            "name": "Product to Sum",
+            "equations": [
+                "Cos x Cos y = [Cos(x - y) + Cos(x + y)]/2",
+                "Sin x Sin y = [Cos(x - y) - Cos(x - y)]/2",
+                "Sin x Cos y = [Sin(x + y) + Sin(x - y)]/2",
+                "Cos x Sin y = [Sin(x + y) - Sin(x - y)]/2"
+            ]
+        },
+        {
+            "name": "Sum of Angles",
+            "equations": [
+                "Sin(x + y) = Sin x Cos y + Cos x Sin y",
+                "Sin(x - y) = Sin x Cos y - Cos x Sin y",
+                "Cos(x +y ) = Cos x Cos y - Sin x Sin y",
+                "Cos(x - y) = Cos x Cos y + Sin x Sin y"
+            ]
+        },
+        {
+            "name": "Symmetric Properties",
+            "equations": [
+                "Sin( -x ) = - Sin x",
+                "Cos( -x ) = Cos x"
+            ]
+        },
+        {
+            "name": "Periodic Properties",
+            "equations": [
+                "Sin( x + pi/2 ) = Cos x",
+                "Cos( x + pi/2 ) = - Sin x"
+            ]
+        }
+    ]
+}
