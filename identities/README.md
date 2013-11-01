@@ -2,15 +2,14 @@
 
 Here's a list of all identities to be made available in the Trigonometric App.
 
-##### Contents
-[Important trigonometric io values](#Important trigonometric io values)
-[Pythagorean Identity](#Pythagorean Identity)
-[Power Reductive Identities](#Power Reductive Identities)
-[Double-Angles](#Double-Angles)
-[Product to Sum](#Product to Sum)
-[Sum of Angles](#Sum of Angles)
-[Symmetric Properties](#Symmetric Properties)
-[Periodic Properties](#Periodic Properties)
+[Important trigonometric io values](#important-trigonometric-io-values) <br>
+[Pythagorean Identity](#pythagorean-identity) <br>
+[Power Reductive Identities](#power-reductive-identities) <br>
+[Double-Angles](#double-angles) <br>
+[Product to Sum](#product-to-sum) <br>
+[Sum of Angles](#sum-of-angles) <br>
+[Symmetric Properties](#symmetric-properties) <br>
+[Periodic Properties](#periodic-properties) <br>
 
 
 
