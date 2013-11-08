@@ -29,16 +29,42 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int white_box_color=0x7f050004;
     }
     public static final class drawable {
-        public static final int equation_bg=0x7f020000;
-        public static final int equation_box=0x7f020001;
-        public static final int equation_shadow=0x7f020002;
-        public static final int header_bg=0x7f020003;
-        public static final int header_box=0x7f020004;
-        public static final int header_shadow=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
+        public static final int angle_sum_cos=0x7f020000;
+        public static final int angle_sum_sin=0x7f020001;
+        public static final int double_angle_cos=0x7f020002;
+        public static final int double_angle_sin=0x7f020003;
+        public static final int equation_bg=0x7f020004;
+        public static final int equation_box=0x7f020005;
+        public static final int equation_shadow=0x7f020006;
+        public static final int header_bg=0x7f020007;
+        public static final int header_box=0x7f020008;
+        public static final int header_shadow=0x7f020009;
+        public static final int ic_launcher=0x7f02000a;
+        public static final int power_reduction_cos=0x7f02000b;
+        public static final int power_reduction_sin=0x7f02000c;
+        public static final int product_to_sum1=0x7f02000d;
+        public static final int product_to_sum2=0x7f02000e;
+        public static final int product_to_sum3=0x7f02000f;
+        public static final int product_to_sum4=0x7f020010;
+        public static final int pythagorean=0x7f020011;
+        public static final int reflection_cos=0x7f020012;
+        public static final int reflection_sin=0x7f020013;
     }
     public static final class id {
+        public static final int ImageView01=0x7f08000e;
+        public static final int ImageView02=0x7f08000d;
+        public static final int ImageView03=0x7f08000c;
+        public static final int ImageView04=0x7f08000b;
+        public static final int ImageView05=0x7f08000a;
+        public static final int ImageView06=0x7f080009;
+        public static final int ImageView07=0x7f080008;
+        public static final int ImageView08=0x7f080007;
+        public static final int ImageView09=0x7f080006;
+        public static final int ImageView10=0x7f080005;
+        public static final int ImageView11=0x7f080004;
+        public static final int ImageView12=0x7f080003;
         public static final int identityList=0x7f080001;
+        public static final int imageView1=0x7f08000f;
         public static final int textView1=0x7f080000;
         public static final int textView2=0x7f080002;
     }

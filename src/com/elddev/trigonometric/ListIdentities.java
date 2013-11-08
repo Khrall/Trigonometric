@@ -28,7 +28,7 @@ private ArrayList<TrigIdentity> identities;
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_list_identities);
-		
+		/*
 		LinearLayout identityListLayout = (LinearLayout) findViewById(R.id.identityList);
 		identities = new ArrayList<TrigIdentity>();
 		
@@ -55,7 +55,7 @@ private ArrayList<TrigIdentity> identities;
 		} catch (JSONException e) { e.printStackTrace(); }
 		
 		
-		
+		*/
 	}
 
 	private ArrayList<TrigIdentity> generateListFromData(JSONObject data) throws JSONException {

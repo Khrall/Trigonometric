@@ -62,6 +62,201 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:textColor="@color/dark_on_background_font_color"
                     android:textSize="15sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView12"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/pythagorean" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/double_angle_sin" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/double_angle_cos" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView09"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/power_reduction_sin" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView08"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/power_reduction_cos" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView07"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/angle_sum_cos" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView06"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/angle_sum_cos" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView05"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/product_to_sum1" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView04"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/product_to_sum2" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView03"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/product_to_sum3" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView02"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/product_to_sum4" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/reflection_sin" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/equation_box" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="10dp"
+                    android:src="@drawable/reflection_cos" />
 
             </FrameLayout>
 
