@@ -11,53 +11,85 @@ import org.json.JSONObject;
 
 import android.app.Activity;
 import android.graphics.Color;
+import android.graphics.Typeface;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.PagerAdapter;
+import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
-public class ListIdentities extends Activity {
 
-private ArrayList<TrigIdentity> identities; 
+public class ListIdentities extends FragmentActivity {	
+	
+	/**
+     * The number of pages (wizard steps) to show in this demo.
+     */
+    private static final int NUM_PAGES = 5;
+
+    /**
+     * The pager widget, which handles animation and allows swiping horizontally to access previous
+     * and next wizard steps.
+     */
+    private ViewPager mPager;
+
+    /**
+     * The pager adapter, which provides the pages to the view pager widget.
+     */
+    private PagerAdapter mPagerAdapter;
+	
+    
+	private ArrayList<TrigIdentity> identities; 
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
 		setContentView(R.layout.activity_list_identities);
-		/*
-		LinearLayout identityListLayout = (LinearLayout) findViewById(R.id.identityList);
-		identities = new ArrayList<TrigIdentity>();
-		
+
+		identities = new ArrayList<TrigIdentity>();		
 		JSONObject identityData = null;
 		try { 
 			identityData = getIdentityData();
 			identities = generateListFromData( identityData );
-			
-			for(TrigIdentity t : identities) {
-				FrameLayout layout = new FrameLayout(this);
-				layout.setBackgroundResource(R.drawable.equation_box);
-				
-				TextView text = new TextView(this);
-				text.setText( t.toTextViewString() );
-				text.setPadding(0, 15, 0, 15);
-				text.setGravity(Gravity.CENTER_HORIZONTAL);
-				text.setTextColor(getResources().getColor(R.color.on_white_box_font_color));
-				text.setTextSize(18);
-				text.setLineSpacing(10, 1);
-				
-				layout.addView(text );
-				identityListLayout.addView( layout );
-			}
 		} catch (JSONException e) { e.printStackTrace(); }
 		
+		TextView tv = (TextView) findViewById(R.id.header_textview);
+		Typeface tf = Typeface.createFromAsset(getAssets(), "fonts/OpenSans-Regular.ttf");
+		tv.setTypeface(tf);
 		
-		*/
+		// Instantiate a ViewPager and a PagerAdapter.
+        mPager = (ViewPager) findViewById(R.id.pager);
+        mPagerAdapter = new ScreenSlidePagerAdapter(getFragmentManager());
+        mPager.setAdapter(mPagerAdapter);
 	}
+	
+	private class ScreenSlidePagerAdapter extends FragmentStatePagerAdapter {
+        public ScreenSlidePagerAdapter(FragmentManager fm) {
+            super(fm);
+        }
 
+        @Override
+        public Fragment getItem(int position) {
+            return new ScreenSlidePageFragment();
+        }
+
+        @Override
+        public int getCount() {
+            return NUM_PAGES;
+        }
+    }
+	
 	private ArrayList<TrigIdentity> generateListFromData(JSONObject data) throws JSONException {
 		ArrayList<TrigIdentity> identities = new ArrayList<TrigIdentity>();
 		
