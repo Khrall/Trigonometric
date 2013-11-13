@@ -5,4 +5,5 @@
     <color name="theme_cyan">#29aba4</color>
     <color name="theme_white">#ffffff</color>
     <color name="theme_white_shadow">#bbbab9</color>
+    <color name="theme_gray">#6b6b6b</color>
 </resources>

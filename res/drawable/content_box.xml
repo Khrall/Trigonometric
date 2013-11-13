@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android = "http://schemas.android.com/apk/res/android" >
+    
+	<item android:drawable="@drawable/content_shadow"
+	    android:left="8px"
+	    android:right="8px"  />
+	<item android:drawable="@drawable/content_bg"
+	    android:bottom="7px"/>
+	
+    
+</layer-list>

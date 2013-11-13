@@ -23,22 +23,28 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
         public static final int theme_blue=0x7f050000;
         public static final int theme_blue_shadow=0x7f050001;
         public static final int theme_cyan=0x7f050003;
+        public static final int theme_gray=0x7f050006;
         public static final int theme_white=0x7f050004;
         public static final int theme_white_shadow=0x7f050005;
     }
     public static final class drawable {
-        public static final int header_bg=0x7f020000;
-        public static final int header_box=0x7f020001;
-        public static final int header_shadow=0x7f020002;
-        public static final int ic_launcher=0x7f020003;
+        public static final int content_bg=0x7f020000;
+        public static final int content_box=0x7f020001;
+        public static final int content_shadow=0x7f020002;
+        public static final int header_bg=0x7f020003;
+        public static final int header_box=0x7f020004;
+        public static final int header_shadow=0x7f020005;
+        public static final int ic_launcher=0x7f020006;
     }
     public static final class id {
-        public static final int header=0x7f080000;
-        public static final int header_textview=0x7f080001;
-        public static final int pager=0x7f080002;
+        public static final int header=0x7f080001;
+        public static final int header_textview=0x7f080002;
+        public static final int identity_text=0x7f080000;
+        public static final int pager=0x7f080003;
     }
     public static final class layout {
-        public static final int activity_list_identities=0x7f030000;
+        public static final int identity_fragment=0x7f030000;
+        public static final int main_activity=0x7f030001;
     }
     public static final class raw {
         public static final int identities=0x7f040000;
