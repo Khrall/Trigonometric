@@ -17,8 +17,8 @@ public class IdentityFragment extends Fragment {
     @Override  
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {  
         View identityView = inflater.inflate(R.layout.identity_fragment, container, false);  
-        TextView identityTextView = (TextView) identityView.findViewById(R.id.identity_text);  
-        identityTextView.setText( getArguments().getString(ARG_IDENTITY_TEXT) );  
+        Equation equationView = (Equation) identityView.findViewById(R.id.equation);
+        equationView.setEquation( getArguments().getString(ARG_IDENTITY_TEXT) );
         return identityView;  
     }  
 }

@@ -1,15 +1,15 @@
 {
 	"testString": "Lorem Ipsum Dolor",
     "meta": {
-        "version": "0.0.1",
-        "last updated": "01.11.2013",
+        "version": "0.0.2",
+        "last updated": "14.11.2013",
         "author": "Khrall"
     },
     "identities": [
         {
             "name": "Pythagorean Identity",
             "equations": [
-            	"Cos^2 x + Sin^2 x = 1"
+            	"Cos^{2} x + Sin^{2} x = 1"
             ]
         },
         {
