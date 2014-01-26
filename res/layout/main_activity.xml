@@ -1,4 +1,4 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -16,42 +16,43 @@
          android:fitsSystemWindows.
     -->
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical" >
+	<FrameLayout
+	    android:id="@+id/header"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/header_box"
+	    android:paddingBottom="15dp"
+	    android:paddingTop="15dp"
+	    android:layout_alignParentTop="true">
+	
+	    <TextView
+	        android:id="@+id/header_textview"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center_horizontal"
+	        android:text="@string/identities_header_text"
+	        android:textColor="@color/theme_white" />
+	</FrameLayout>
 
-        <FrameLayout
-            android:id="@+id/header"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/header_box" >
-
-            <TextView
-                android:id="@+id/header_textview"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="15dp"
-                android:layout_marginTop="15dp"
-                android:gravity="center_horizontal"
-                android:text="@string/identities_header_text"
-                android:textColor="@color/theme_white" />
-        </FrameLayout>
-
-        <android.support.v4.view.ViewPager
-            xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/pager"
-            android:layout_width="match_parent"
-            android:layout_height="381dp"
-            android:layout_weight="1.08" />
-
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/header_box"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
-        </FrameLayout>
-    </LinearLayout>
-
-</FrameLayout>
+	<FrameLayout
+	    android:id="@+id/footer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/header_box"
+	    android:paddingBottom="15dp"
+	    android:paddingTop="15dp"
+	    android:layout_alignParentBottom="true" >
+	</FrameLayout>
+	
+	<fragment
+	    android:id="@+id/main_fragment"
+	    android:name="com.elddev.trigonometric.MainFragment"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    tools:layout="@layout/main_fragment"
+	    android:layout_below="@id/header"
+	    android:layout_above="@id/footer" />
+	
+	
+	
+</RelativeLayout>
