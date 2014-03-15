@@ -24,16 +24,7 @@ theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
          */
-        public static final int equationText=0x7f010003;
-        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-         */
-        public static final int fontColor=0x7f010002;
+        public static final int equation=0x7f010002;
     }
     public static final class color {
         public static final int theme_beige=0x7f050002;
@@ -58,21 +49,22 @@ containing a value of this type.
         public static final int list_button=0x7f020009;
     }
     public static final class id {
-        public static final int fav_button=0x7f080005;
-        public static final int footer=0x7f080002;
-        public static final int header=0x7f080000;
-        public static final int header_textview=0x7f080001;
-        public static final int home_button=0x7f080003;
-        public static final int home_content_holder=0x7f080008;
-        public static final int list_button=0x7f080004;
-        public static final int main_fragment=0x7f080006;
-        public static final int scrollView1=0x7f080007;
+        public static final int fav_button=0x7f080007;
+        public static final int footer=0x7f080004;
+        public static final int fragment_holder=0x7f080008;
+        public static final int header=0x7f080002;
+        public static final int header_textview=0x7f080003;
+        public static final int home_button=0x7f080005;
+        public static final int home_content_holder=0x7f080001;
+        public static final int list_button=0x7f080006;
+        public static final int scrollView1=0x7f080000;
     }
     public static final class layout {
         public static final int content_box=0x7f030000;
-        public static final int main_activity=0x7f030001;
-        public static final int main_fragment=0x7f030002;
-        public static final int news_box=0x7f030003;
+        public static final int home_fragment=0x7f030001;
+        public static final int list_fragment=0x7f030002;
+        public static final int main_activity=0x7f030003;
+        public static final int news_box=0x7f030004;
     }
     public static final class raw {
         public static final int identities=0x7f040000;
@@ -158,24 +150,22 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
           @attr name com.elddev.trigonometric:buttonBarStyle
         */
         public static final int ButtonBarContainerTheme_buttonBarStyle = 0;
-        /** Attributes that can be used with a Equation.
+        /** Attributes that can be used with a EquationView.
            <p>Includes the following attributes:</p>
            <table>
            <colgroup align="left" />
            <colgroup align="left" />
            <tr><th>Attribute</th><th>Description</th></tr>
-           <tr><td><code>{@link #Equation_equationText com.elddev.trigonometric:equationText}</code></td><td></td></tr>
-           <tr><td><code>{@link #Equation_fontColor com.elddev.trigonometric:fontColor}</code></td><td></td></tr>
+           <tr><td><code>{@link #EquationView_equation com.elddev.trigonometric:equation}</code></td><td></td></tr>
            </table>
-           @see #Equation_equationText
-           @see #Equation_fontColor
+           @see #EquationView_equation
          */
-        public static final int[] Equation = {
-            0x7f010002, 0x7f010003
+        public static final int[] EquationView = {
+            0x7f010002
         };
         /**
-          <p>This symbol is the offset where the {@link com.elddev.trigonometric.R.attr#equationText}
-          attribute's value can be found in the {@link #Equation} array.
+          <p>This symbol is the offset where the {@link com.elddev.trigonometric.R.attr#equation}
+          attribute's value can be found in the {@link #EquationView} array.
 
 
           <p>Must be a string value, using '\\;' to escape characters such as '\\n' or '\\uxxxx' for a unicode character.
@@ -184,23 +174,8 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 theme attribute (in the form
 "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
 containing a value of this type.
-          @attr name com.elddev.trigonometric:equationText
+          @attr name com.elddev.trigonometric:equation
         */
-        public static final int Equation_equationText = 1;
-        /**
-          <p>This symbol is the offset where the {@link com.elddev.trigonometric.R.attr#fontColor}
-          attribute's value can be found in the {@link #Equation} array.
-
-
-          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
-"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
-<p>This may also be a reference to a resource (in the form
-"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
-theme attribute (in the form
-"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
-containing a value of this type.
-          @attr name com.elddev.trigonometric:fontColor
-        */
-        public static final int Equation_fontColor = 0;
+        public static final int EquationView_equation = 0;
     };
 }

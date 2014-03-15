@@ -94,15 +94,23 @@
 	    
 	</LinearLayout>
 	
+	<FrameLayout
+	  	android:id="@+id/fragment_holder"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:layout_above="@id/footer"
+	    android:layout_below="@id/header"
+	/>
+	
+	<!-- 
 	<fragment
 	    android:id="@+id/main_fragment"
 	    android:name="com.elddev.trigonometric.MainFragment"
 	    android:layout_width="match_parent"
 	    android:layout_height="match_parent"
-	    tools:layout="@layout/main_fragment"
+	    android:layout_above="@id/footer"
 	    android:layout_below="@id/header"
-	    android:layout_above="@id/footer" />
-	
-	
+	    tools:layout="@layout/main_fragment" />
+	 -->
 	
 </RelativeLayout>

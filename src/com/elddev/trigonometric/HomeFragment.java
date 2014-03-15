@@ -23,7 +23,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainFragment extends Fragment {
+public class HomeFragment extends Fragment {
 	
 	int fragmentHeight;
 	int[] headerColors = {R.color.theme_cyan, R.color.theme_blue};
@@ -33,7 +33,7 @@ public class MainFragment extends Fragment {
                              Bundle savedInstanceState) {
 		
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.main_fragment, container, false);
+        return inflater.inflate(R.layout.home_fragment, container, false);
     }
 	
 	@Override
@@ -44,6 +44,7 @@ public class MainFragment extends Fragment {
 		
 		myView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
 			
+			@SuppressWarnings("deprecation")
 			@Override
 			public void onGlobalLayout() {
 				fragmentHeight = getView().getHeight();
@@ -135,6 +136,7 @@ public class MainFragment extends Fragment {
 	private void resizeDrawable(final Drawable drawable, final ImageView imageView) {
 		imageView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
 			
+			@SuppressWarnings("deprecation")
 			@Override
 			public void onGlobalLayout() {
 				int viewWidth = imageView.getWidth();
@@ -144,6 +146,7 @@ public class MainFragment extends Fragment {
 					Bitmap bitmapResized = Bitmap.createScaledBitmap(b, viewWidth, viewWidth, false);
 					Drawable d = new BitmapDrawable(getView().getResources(), bitmapResized);
 					imageView.setImageDrawable(d);
+					imageView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
 				}
 			}
 		});
