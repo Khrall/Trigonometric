@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="identities_header_text">Trigonometric Identities</string>
+    <string name="identities_header_text">Home</string>
     <string name="app_name">Trigonometric</string>
     <string name="identities_description_text">
         Hey, this application displays some of your favourite trigonometric identities!

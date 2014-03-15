@@ -20,10 +20,10 @@
 	    android:id="@+id/header"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
+	    android:layout_alignParentTop="true"
 	    android:background="@drawable/header_box"
-	    android:paddingBottom="15dp"
-	    android:paddingTop="15dp"
-	    android:layout_alignParentTop="true">
+	    android:paddingBottom="20dp"
+	    android:paddingTop="18dp" >
 	
 	    <TextView
 	        android:id="@+id/header_textview"
@@ -34,15 +34,65 @@
 	        android:textColor="@color/theme_white" />
 	</FrameLayout>
 
-	<FrameLayout
+	<LinearLayout
 	    android:id="@+id/footer"
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:background="@drawable/header_box"
-	    android:paddingBottom="15dp"
-	    android:paddingTop="15dp"
-	    android:layout_alignParentBottom="true" >
-	</FrameLayout>
+	    android:baselineAligned="false"
+	    android:layout_alignParentBottom="true"
+	    android:background="@drawable/header_bg"
+	    android:orientation="horizontal"
+	    android:paddingBottom="8dp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:paddingTop="8dp" >
+
+	    	<FrameLayout
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1">
+	    	    
+	    	    <ImageButton
+	    	        android:id="@+id/home_button"
+	    	        android:layout_width="32dp"
+	    	        android:layout_height="32dp"
+	    	        android:layout_gravity="center"
+	    	        android:background="@drawable/home_button"
+	    	        android:contentDescription="@drawable/home_button" />
+	    	    
+	    	</FrameLayout>
+	        
+	        <FrameLayout
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1">
+	    	    
+	            <ImageButton
+		            android:id="@+id/list_button"
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_gravity="center"
+		            android:background="@drawable/list_button"
+		            android:contentDescription="@drawable/list_button" />
+	            
+	    	</FrameLayout>
+	        
+	        <FrameLayout
+	    	    android:layout_width="0dp"
+	    	    android:layout_height="wrap_content"
+	    	    android:layout_weight="1">
+	    	    
+	            <ImageButton
+		            android:id="@+id/fav_button"
+		            android:layout_width="32dp"
+		            android:layout_height="32dp"
+		            android:layout_gravity="center"
+		            android:background="@drawable/fav_button" 
+		            android:contentDescription="@drawable/fav_button" />
+	            
+	    	</FrameLayout>
+	    
+	</LinearLayout>
 	
 	<fragment
 	    android:id="@+id/main_fragment"

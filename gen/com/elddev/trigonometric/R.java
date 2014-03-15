@@ -49,23 +49,30 @@ containing a value of this type.
         public static final int content_bg=0x7f020000;
         public static final int content_box=0x7f020001;
         public static final int content_shadow=0x7f020002;
-        public static final int header_bg=0x7f020003;
-        public static final int header_box=0x7f020004;
-        public static final int header_shadow=0x7f020005;
-        public static final int ic_launcher=0x7f020006;
+        public static final int fav_button=0x7f020003;
+        public static final int header_bg=0x7f020004;
+        public static final int header_box=0x7f020005;
+        public static final int header_shadow=0x7f020006;
+        public static final int home_button=0x7f020007;
+        public static final int ic_launcher=0x7f020008;
+        public static final int list_button=0x7f020009;
     }
     public static final class id {
+        public static final int fav_button=0x7f080005;
         public static final int footer=0x7f080002;
         public static final int header=0x7f080000;
         public static final int header_textview=0x7f080001;
-        public static final int home_content_holder=0x7f080005;
-        public static final int main_fragment=0x7f080003;
-        public static final int scrollView1=0x7f080004;
+        public static final int home_button=0x7f080003;
+        public static final int home_content_holder=0x7f080008;
+        public static final int list_button=0x7f080004;
+        public static final int main_fragment=0x7f080006;
+        public static final int scrollView1=0x7f080007;
     }
     public static final class layout {
         public static final int content_box=0x7f030000;
         public static final int main_activity=0x7f030001;
         public static final int main_fragment=0x7f030002;
+        public static final int news_box=0x7f030003;
     }
     public static final class raw {
         public static final int identities=0x7f040000;

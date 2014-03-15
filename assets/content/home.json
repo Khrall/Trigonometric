@@ -1,0 +1,16 @@
+{
+    "news": [
+        {
+            "color": "cyan",
+            "title": "What's New?",
+            "image": "trigologo",
+            "text": "Trigonometric is a new app from Chaos Development for looking up your own favourite trigonometric identities!"
+        },
+        {
+            "color": "blue",
+            "title": "Soy muy loco!",
+            "image": "trigologo",
+            "text": "Trigonometric is a new app from Chaos Development for looking up your own favourite trigonometric identities!"
+        }
+    ]
+}
