@@ -39,7 +39,6 @@ public class EqNode {
 		operands.add(child);
 		init(true, restInput);
 		
-		
 	}
 	
 	private void init(boolean encountered_plus_minus, String input) {
@@ -239,9 +238,7 @@ public class EqNode {
 	private String operationToString(EqNode op1, EqNode op2) {
 		if(bracketOperation.equals(POW)) {
 			return "(" + op1 + ")^(" + op2 + ")";
-		} 
-		
-		
+		}
 		return "";
 	}
 

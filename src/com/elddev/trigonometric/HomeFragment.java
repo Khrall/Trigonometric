@@ -34,6 +34,8 @@ public class HomeFragment extends Fragment {
 		
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.home_fragment, container, false);
+        
+        
     }
 	
 	@Override
@@ -58,7 +60,7 @@ public class HomeFragment extends Fragment {
 	
 	private void initializeMainFragment(int fragmentHeight) {
 		try {
-			JSONObject jsonContent = (new JSONImporter(JSONImporter.MAIN, this)).getContent();
+			JSONObject jsonContent = (new JSONImporter(JSONImporter.HOME, this.getView())).getContent();
 			JSONArray jsonNews = jsonContent.getJSONArray("news");
 			
 			for(int i = 0; i < jsonNews.length(); i++) {

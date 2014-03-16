@@ -6,15 +6,16 @@ import java.io.InputStream;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import android.support.v4.app.Fragment;
+import android.view.View;
 
 public class JSONImporter {
 	
-	public static final int MAIN = 0;
+	public static final int HOME = 0, EQUATIONS = 1;
+	public static final String FILES[] = {"content/home.json", "content/equations.json"};
 	private String json = null;
 	
-	public JSONImporter(int type, Fragment fragment) throws IOException {
-		InputStream is = fragment.getView().getContext().getAssets().open("content/home.json");
+	public JSONImporter(int type, View view) throws IOException {
+		InputStream is = view.getContext().getAssets().open(FILES[type]);
 		int size = is.available();
 		byte[] buffer = new byte[size];
 		is.read(buffer);

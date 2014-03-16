@@ -1,0 +1,20 @@
+{
+    "equations": [
+        {
+        	"title": "raandom",
+            "string": "_pow{2,x}+z_pow{(3+y),3}-_pow{e,_pow{t,2}-3}+_pow{cos,2}(x)",
+            "height": 60,
+            "width": 420,
+            "startX": "5.0",
+            "startY": "30.0"
+        },
+        {
+            "title": "fraction",
+            "string": "_frac{_pow{sin,2}(x),_pow{cos,2}(x)} = _pow{tan,2}(x)",
+            "height": 120,
+            "width": 420,
+            "startX": "5.0",
+            "startY": "30.0"
+        }
+    ]
+}

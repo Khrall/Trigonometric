@@ -1,7 +1,6 @@
 <ScrollView
     
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res/com.elddev.trigonometric"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollView1"
     android:layout_width="match_parent"
@@ -9,6 +8,8 @@
     android:fillViewport="true"
     android:background="@color/theme_beige"
     tools:context=".MainActivity" >
+    
+    <!-- xmlns:custom="http://schemas.android.com/apk/res/com.elddev.trigonometric" -->
 
     <!--
          The primary full-screen view. This can be replaced with whatever view
@@ -22,11 +23,13 @@
     -->
         
     <LinearLayout
-        android:id="@+id/home_content_holder"
+        android:id="@+id/list_content_holder"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical" >
-
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" >
+<!--
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -34,15 +37,16 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:layout_marginTop="10dp"
+            android:padding="16dp"
             android:background="@drawable/content_box" >
 
             <com.elddev.trigonometric.EquationView
-                android:layout_width="match_parent"
+                android:layout_width="420dp"
                 android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
                 custom:equation="_pow{2,x}+z_pow{(3+y),3}-_pow{e,_pow{t,2}-3}+_pow{cos,2}(x)" />
-
         </FrameLayout>
-
+-->
     </LinearLayout>
 
 </ScrollView>
