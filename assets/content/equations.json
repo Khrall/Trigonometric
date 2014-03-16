@@ -1,20 +1,140 @@
 {
     "equations": [
         {
-        	"title": "raandom",
-            "string": "_pow{2,x}+z_pow{(3+y),3}-_pow{e,_pow{t,2}-3}+_pow{cos,2}(x)",
-            "height": 60,
-            "width": 420,
+        	"title": "Pythagorean Identity",
+            "string": "_pow{Cos,2} x+_pow{Sin,2} x = 1",
+            "height": 35,
+            "width": 170,
             "startX": "5.0",
-            "startY": "30.0"
+            "startY": "25.0"
         },
         {
-            "title": "fraction",
-            "string": "_frac{_pow{sin,2}(x),_pow{cos,2}(x)} = _pow{tan,2}(x)",
-            "height": 120,
-            "width": 420,
-            "startX": "5.0",
-            "startY": "30.0"
+        	"title": "Sine Power Reduction",
+        	"string": "_pow{Sin,2} x  = _frac{1-Cos 2x,2}",
+        	"height": 58,
+        	"width": 190,
+        	"startX": "5.0",
+        	"startY": "35.0"
+        },
+        {
+         	"title": "Cosine Power Reduction",
+        	"string": "_pow{Cos,2} x  = _frac{1+Cos 2x,2}",
+        	"height": 58,
+        	"width": 195,
+        	"startX": "5.0",
+        	"startY": "35.0"       
+        },
+        {
+         	"title": "Sine Double Angle",
+        	"string": "Sin 2x  =  2 Sin x Cos x",
+        	"height": 35,
+        	"width": 205,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Cosine Double Angle",
+        	"string": "Cos 2x  =  _pow{Cos,2} x - _pow{Sin,2} x",
+        	"height": 35,
+        	"width": 240,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Product to Sum: 1",
+        	"string": "2 Cos x Cos y  =  Cos(x-y)+Cos(x+y)",
+        	"height": 35,
+        	"width": 365,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Product to Sum: 2",
+        	"string": "2 Sin x Sin y  =  Cos(x-y)+Cos(x+y)",
+        	"height": 35,
+        	"width": 340,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Product to Sum: 3",
+        	"string": "2 Sin x Cos y  =  Sin(x+y)+Sin(x-y)",
+        	"height": 35,
+        	"width": 350,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Product to Sum: 4",
+        	"string": "2 Cos x Sin y  =  Sin(x+y)-Sin(x-y)",
+        	"height": 35,
+        	"width": 348,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sum of Angles: 1",
+        	"string": "Sin(x+y)  =  Sin x Cos y + Cos x Sin y",
+        	"height": 35,
+        	"width": 358,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sum of Angles: 2",
+        	"string": "Sin(x-y)  =  Sin x Cos y - Cos x Sin y",
+        	"height": 35,
+        	"width": 350,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sum of Angles: 3",
+        	"string": "Cos(x+y)  =  Cos x Cos y - Sin x Sin y",
+        	"height": 35,
+        	"width": 362,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sum of Angles: 4",
+        	"string": "Cos(x-y)  =  Cos x Cos y + Sin x Sin y",
+        	"height": 35,
+        	"width": 355,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sine symmetry",
+        	"string": "Sin(-x)  = -Sin(x)",
+        	"height": 35,
+        	"width": 172,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Cosine symmetry",
+        	"string": "Cos(-x)  =  Cos(x)",
+        	"height": 35,
+        	"width": 180,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Sine to Cosine",
+        	"string": "Sin(x+\u03C0/2)  =  Cos(x)",
+        	"height": 35,
+        	"width": 220,
+        	"startX": "5.0",
+        	"startY": "24.0"       
+        },
+        {
+         	"title": "Cosine to Sine",
+        	"string": "Cos(x+\u03C0/2)  = -Sin(x)",
+        	"height": 35,
+        	"width": 225,
+        	"startX": "5.0",
+        	"startY": "24.0"       
         }
     ]
 }

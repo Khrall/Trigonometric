@@ -181,6 +181,7 @@ public class EquationView extends View {
 			paint.setTextSize(textSize);
 			
 		} else if(operation.equals(EqNode.FRAC)) {
+			cursor[0] += 10f;
 			
 			// Decide vertical placement offset of the numerator and denominator
 			yIncrease = textSize * 4/5;
@@ -206,15 +207,6 @@ public class EquationView extends View {
 			
 			//Expression above is smaller than the one below
 			if(dx1 < dx2) {
-				canvas.drawRect(rememberX - 1f, cursor[1] - textSize/3, rememberX + dx2, cursor[1] + 100f, eraser);
-				cursor[0] = rememberX + (dx1 - dx2)/2;
-				yIncrease = textSize;
-				cursor[1] += yIncrease;
-				drawNode(op2, cursor, depth, canvas);
-				cursor[1] -= yIncrease;
-				cursor[0] = rememberX + dx1;
-				
-			} else {
 				canvas.drawRect(rememberX - 1f, cursor[1] - 100f, rememberX + dx1, cursor[1] - textSize/3, eraser);
 				cursor[0] = rememberX + (dx2 - dx1)/2;
 				yIncrease = textSize * 4/5;
@@ -223,6 +215,14 @@ public class EquationView extends View {
 				cursor[1] += yIncrease;
 				cursor[0] = rememberX + dx2;
 				
+			} else {
+				canvas.drawRect(rememberX - 1f, cursor[1] - textSize/3, rememberX + dx2, cursor[1] + 100f, eraser);
+				cursor[0] = rememberX + (dx1 - dx2)/2;
+				yIncrease = textSize;
+				cursor[1] += yIncrease;
+				drawNode(op2, cursor, depth, canvas);
+				cursor[1] -= yIncrease;
+				cursor[0] = rememberX + dx1;
 			}
 			
 			canvas.drawLine(cursor[0] + 5f, cursor[1] - textSize/3, rememberX - 5f, cursor[1] - textSize/3, paint);
