@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+ 	tools:context=".MainActivity"
+ 	android:fillViewport="true"
+ 	android:background="@color/theme_beige"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    android:layout_gravity="center" >
+
+    <ImageView
+        android:id="@+id/heartImage"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.24"
+        android:adjustViewBounds="true"
+        android:src="@drawable/heart" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:gravity="center_horizontal"
+        android:text="Everyone has their favourite identities, and in the future, you&apos;ll be able to keep track of them right here!"
+        android:textColor="@color/theme_text_on_beige" />
+
+</LinearLayout>

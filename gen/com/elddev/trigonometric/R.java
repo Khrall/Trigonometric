@@ -32,7 +32,8 @@ containing a value of this type.
         public static final int theme_blue_shadow=0x7f050001;
         public static final int theme_cyan=0x7f050003;
         public static final int theme_gray=0x7f050006;
-        public static final int theme_text_on_white=0x7f050007;
+        public static final int theme_text_on_beige=0x7f050007;
+        public static final int theme_text_on_white=0x7f050008;
         public static final int theme_white=0x7f050004;
         public static final int theme_white_shadow=0x7f050005;
     }
@@ -44,29 +45,33 @@ containing a value of this type.
         public static final int header_bg=0x7f020004;
         public static final int header_box=0x7f020005;
         public static final int header_shadow=0x7f020006;
-        public static final int home_button=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int list_button=0x7f020009;
+        public static final int heart=0x7f020007;
+        public static final int home_button=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int list_button=0x7f02000a;
     }
     public static final class id {
-        public static final int fav_button=0x7f080008;
-        public static final int footer=0x7f080005;
-        public static final int fragment_holder=0x7f080009;
-        public static final int header=0x7f080003;
-        public static final int header_textview=0x7f080004;
-        public static final int home_button=0x7f080006;
-        public static final int home_content_holder=0x7f080001;
-        public static final int list_button=0x7f080007;
-        public static final int list_content_holder=0x7f080002;
-        public static final int scrollView1=0x7f080000;
+        public static final int fav_button=0x7f08000a;
+        public static final int footer=0x7f080007;
+        public static final int fragment_holder=0x7f08000b;
+        public static final int header=0x7f080005;
+        public static final int header_textview=0x7f080006;
+        public static final int heartImage=0x7f080000;
+        public static final int home_button=0x7f080008;
+        public static final int home_content_holder=0x7f080003;
+        public static final int list_button=0x7f080009;
+        public static final int list_content_holder=0x7f080004;
+        public static final int scrollView1=0x7f080002;
+        public static final int textView1=0x7f080001;
     }
     public static final class layout {
         public static final int content_box=0x7f030000;
         public static final int equation_box=0x7f030001;
-        public static final int home_fragment=0x7f030002;
-        public static final int list_fragment=0x7f030003;
-        public static final int main_activity=0x7f030004;
-        public static final int news_box=0x7f030005;
+        public static final int fav_fragment=0x7f030002;
+        public static final int home_fragment=0x7f030003;
+        public static final int list_fragment=0x7f030004;
+        public static final int main_activity=0x7f030005;
+        public static final int news_box=0x7f030006;
     }
     public static final class raw {
         public static final int identities=0x7f040000;
